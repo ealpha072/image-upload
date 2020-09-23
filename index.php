@@ -23,8 +23,6 @@
             }
         }
         $myresult = mysqli_query($conn, "SELECT * FROM images");
-
-
 ?>
 
 <!DOCTYPE html>
@@ -57,16 +55,16 @@
                 <input type="file" name="image">
             </div>
             <div class="form-group">
-                <textarea name="image_text" placeholder="Hello" class="form-control z-depth-1">
-                </textarea>
+                <textarea name="image_text" placeholder="Hello" class="form-control" rows='10'></textarea>
             </div>
             
             <button class="btn btn-primary btn-block" name="upload_btn" type="submit">POST</button>
             
         </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
