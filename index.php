@@ -42,7 +42,7 @@
             <?php
                 while( $row = mysqli_fetch_array($myresult)){
                     echo "<div id = 'img_div'>";
-                        echo "<img src = 'images/".$row['img']."'>";
+                        echo "<img class='img-fluid'  src = 'images/".$row['img']."'>";
                         echo "<p>".$row['img_text']."</p>";
                     echo "</div>";
                 }
