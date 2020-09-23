@@ -13,7 +13,7 @@
 
             //img file directory;
             $location = "images/".basename($img);
-            $insertQuery = 'INSERT INTO images(img,img_text) VALUES('$img','$img_text')';
+            $insertQuery = "INSERT INTO images(img,img_text) VALUES('$img','$img_text')";
             //execute querry ;
             mysqli_query($conn,$insertQuery);
             if(move_uploaded_file($_FILES['image']['tmp_name'],$location)){
@@ -40,15 +40,14 @@
     <div class="container">
         <div>
             <?php
-                $row = mysqli_feth_array($myresult);
-                while($row){
+                while( $row = mysqli_fetch_array($myresult)){
                     echo "<div id = 'img_div'>";
-                        echo "<img src = 'images/"$row['img']."'>";
+                        echo "<img src = 'images/".$row['img']."'>";
                         echo "<p>".$row['img_text']."</p>";
                     echo "</div>";
                 }
 
-              ?>
+            ?>
         </div>
         <form method="post" action="main.php" enctype="multipart/form-data">
             <div class="form-group">
