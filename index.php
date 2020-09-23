@@ -58,7 +58,7 @@
                 <textarea name="image_text" placeholder="Hello" class="form-control" rows='10'></textarea>
             </div>
             
-            <button class="btn btn-primary btn-block" name="upload_btn" type="submit">POST</button>
+            <button class="btn btn-primary btn-block" name="upload_btn" type="submit"><i class="fa fa-paper-plane"></i> UPLOAD</button>
             
         </form>
     </div>
